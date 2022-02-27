@@ -1,0 +1,66 @@
+﻿
+@model CustomerViewModel
+@{
+   
+}
+@*@Html.EditorFor(x=> x.FirstName, new {@class = "form-control"})*@
+
+@*<input type="text" class = "form-control" id="firstName" value="" asp-for="FirstName" />
+<input type="text" class = "form-control" id="lastName" value="" asp-for="LastName" />
+<input type="text" class = "form-control" id="Address" value="" asp-for="Adress" />
+<input type="text" class = "form-control" id="age" value="" asp-for="Age" />
+*@
+
+<form id="myForm" method="post">
+    <div class="form-group">
+        <label asp-for="FirstName" class="control-label"></label>
+        <input type="text" class = "form-control" id="firstName" value="" asp-for="FirstName" />
+        <span asp-validation-for="FirstName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName" class="control-label"></label>
+        <input type="text" class = "form-control" id="lastName" value="" asp-for="LastName" />
+        <span asp-validation-for="LastName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Adress" class="control-label"></label>
+        <input type="text" class = "form-control" id="Adress" value="" asp-for="Adress" />
+        <span asp-validation-for="Adress" class="text-danger"></span>
+    </div>
+
+     <div class="form-group">
+        <label asp-for="Password" class="control-label"></label>
+        <input type="password" class = "form-control" id="Password" value="" asp-for="Password" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+    <input class="btn-primary" type="submit" value="Submit"/>
+</form>
+
+
+
+    @*<p>@Model.Id</p>
+    <p>@Model.FirstName</p>
+    <p>@Model.LastName</p>
+    <p>@Model.Adress</p>
+    <p>@Model.Age</p>*@
+
+@*
+<table>
+  <tr>
+    <th>Id</th>
+    <th>FirstName</th>
+    <th>LastName</th>
+    <th>Adress</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td><p>@Model.Id</p></td>
+    <td><p>@Model.FirstName</p></td>
+    <td><p>@Model.LastName</p></td>
+    <td><p>@Model.Adress</p></td>
+    <td><p>@Model.Age</p></td>
+  </tr>
+
+
+</table>*@
+
